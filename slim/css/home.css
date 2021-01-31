@@ -1,0 +1,112 @@
+body{
+    background-color: #000;
+}
+.tv-section {
+    width: 100%;
+    display: contents;
+}
+.tv-party{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/hometv.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none
+}
+
+.content-tv{
+    background-image: url(../images/cont.png);
+}
+.content-tv{
+    width: 100%;
+    height: 100%;
+    background-position: -308px -106px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 1%;
+    display: inline-block;
+    margin-left: 16%;
+    z-index: 9;
+    cursor: pointer;
+}
+.content-tv:after{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/out.gif');
+    background-size: cover;
+    content:'';
+    position:absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+    border-radius: 30px;
+}
+
+.diagram-tv{
+    background-color:#000
+}
+.diagram-tv{
+    width: 50%;
+    height: 78%;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 0%;
+    display: inline-block;
+    margin-left: 16%;
+    z-index: 9;
+    cursor: pointer;
+}
+.diagram-tv img{
+    width: 200%;
+}
+/* .diagram-tv:after {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/out.gif');
+    background-size: cover;
+    content:'';
+    position:absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+    border-radius: 30px;
+} */
+/* width */
+.diagram-tv::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .diagram-tv::-webkit-scrollbar-track {
+    background:transparent;
+  }
+  
+  /* Handle */
+  .diagram-tv::-webkit-scrollbar-thumb {
+    background: #1F0638;
+  }
+  
+  /* Handle on hover */
+  .diagram-tv::-webkit-scrollbar-thumb:hover {
+    opacity: 0.2;
+  }
+  .diagram-tv button{
+    position: absolute;
+    right: 203px;
+    top: 14px;
+    z-index: 9999;
+    font-size: 40px;
+    background-color: rgba(0,0,0, 0.8);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+@media only screen and (max-width: 1440px) {
+    .content-tv{
+        background-position: -456px -164px;
+    }
+  }
